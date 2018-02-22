@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Doctor List</title>
+    <link rel="stylesheet" href="css/doctor.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/rabon.css">
+    <script src="js/clock.js" charset="utf-8"></script>
+  </head>
+  <body onload="startTime()">
+    <!--1st header-->
+      <div class="header">
+			<div class="home">
+			<a href="home.html">Home</a>
+			</div>
+          <div class="admin">
+            <marquee behavior="alternate" scrollamount="2s"><h1>Hello Admin!</h1></marquee>
+          </div>
+          <div class="logout">
+            <a href="login.html">Logout</a>
+          </div>
+      </div>
+      <!--1st header end-->
+      <!--Hospital Name start-->
+      <div class="name">
+        <h2>Hospital Management System</h2>
+      </div>
+      <!--Hospital Name End-->
+      <!--Home page menue start-->
+      <div class="menue">
+        <a class="active" href="doctor.html">Doctor's</a>
+        <a href="adddoctor.html">Add New Doctor</a>
+        <a href="admitpatient.html">Admit Patient</a>
+        <a href="patient.html">Patient's</a>
+        <a href="appoitment.html">Appoitment</a>
+		<a href="appoitmentlist.html">View Appoitment</a>
+      </div>
+      <!--Home page menue End-->
+      <!--Analog Clock-->
+      <div id="sabuj">
+      <h1>Courrent Time</h1>
+      <div id="a1"></div>
+      </div>
+      <!--Calander-->
+  <div class="calander">
+  <h4>Today</h4>
+  <script src="js/calander.js"></script>
+  </div>
+  <!-- Doctor List-->
+  <div id="navbar">
+        <div class="non-semantic-protector">
+        	<h1 class="ribbon">
+        		<strong class="ribbon-content">Doctor List</strong>
+        	</h1>
+        </div>
+   <form class="form-basic" method="post" action="#">
+   <input type="text" name="search" placeholder="Search doctor..">
+		<div class="doctor">
+		<table>
+		<caption>Click Doctor Name for more details</caption>
+		  <tr>
+			<th id="sl">ID</th>
+			<th>Dr Name</th>
+			<th>Specialist</th>
+			<th>Qualification </th>
+			<th>Visiting Hours </th>
+			<th>Chamber</th>
+			<th>Phone</th>
+		  </tr>
+		  <tr>
+			<td>01</td>
+			<td><a href="">Dr. Prodip Roy </a></td>
+			<td>Hematology</td>
+			<td>MBBS (India)</td>
+			<td>Everyday 2-5pm</td>
+			<td>Green View</td>
+			<td>+880-2-861031</td>
+		  </tr>
+		  <tr>
+			<td>02</td>
+			<td><a href="">Dr. Pranto Roy </a></td>
+			<td>Dermatology </td>
+			<td>DDSC(UK)</td>
+			<td></td>
+			<td>Ibns D & I C</td>
+			<td>+8801719470043</td>
+		  </tr>
+		  <tr>
+			<td>03</td>
+			<td><a href="">Md. Arpita Rany</a></td>
+			<td>Surgery</td>
+			<td> FCPS(Surgery)</td>
+			<td></td>
+			<td>Ibn Sina</td>
+			<td>+8801717351631</td>
+		  </tr>
+		  <tr>
+			<td>04</td>
+			<td><a href="">Dr. Purnima Rany</a></td>
+			<td>Medicine</td>
+			<td>FACP(USA)</td>
+			<td></td>
+			<td>Monowara Hospital </td>
+			<td>+880-2-831-8135</td>
+		  </tr>
+		  <tr>
+			<td>05</td>
+			<td><a href="">Dr. Arun Roy </a></td>
+			<td>Child - Pediatric</td>
+			<td>MBBS</td>
+			<td></td>
+			<td>Central Hospital</td>
+			<td>+880-2-9660015-19</td>
+		  </tr>
+		  <tr>
+			<td>06</td>
+			<td><a href="">Dr. Ratna Roy </a></td>
+			<td>Surgical </td>
+			<td>FCPS</td>
+			<td></td>
+			<td>Ibn Sina</td>
+			<td>+8801717351631 </td>
+		  </tr>
+		</table>
+	</div>
+       
+
+    </form>
+  </div>
+        <div class="footer">
+        <p>Copyright &copy; <script type="text/javascript">var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> Ratin Roy- <a href="#">TUP-Off-BDJobs-29</a> LICT, Dinajpur.</p>
+      </div>
+</body>
+</html>

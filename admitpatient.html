@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Add Patient</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/clock.css">    
+    <link rel="stylesheet" href="css/admitpatient.css">    
+    <link rel="stylesheet" href="css/rabon.css">    
+	<script src="js/jquery-3.1.0.min.js" charset="utf-8"></script>
+    <script src="js/clock.js" charset="utf-8"></script>
+</head>
+  <body onload="startTime()">
+    <!--1st header-->
+      <div class="header">
+		<div class="home">
+		<a href="home.html">Home</a>
+		</div>
+          <div class="admin">
+            <marquee behavior="alternate" scrollamount="2s"><h1>Hello Admin!</h1></marquee>
+          </div>
+          <div class="logout">
+            <a href="login.html">Logout</a>
+          </div>
+      </div>
+      <!--1st header end-->
+      <!--Hospital Name start-->
+      <div class="name">
+        <h2>Hospital Management System</h2>
+      </div>
+      <!--Hospital Name End-->
+      <!--Home page menue start-->
+      <div class="menue">
+        <a href="doctor.html">Doctor's</a>
+        <a href="adddoctor.html">Add New Doctor</a>
+        <a class="active" href="admitpatient.html">Admit Patient</a>
+        <a href="patient.html">Patient's</a>
+        <a href="appoitment.html">Get Appoitment</a>
+        <a href="appoitmentlist.html">View Appoitment</a>
+      </div>
+      <!--Home page menue End-->
+      <!--Analog Clock-->
+      <div id="sabuj">
+      <h1>Courrent Time</h1>
+      <div id="a1"></div>
+      </div>
+      <!--Calander-->
+<div class="calander">
+  <h4>Today</h4>
+<script src="js/calander.js"></script>
+</div>
+<!-- Admit Patient-->
+<div class="non-semantic-protector">
+        	<h1 class="ribbon">
+        		<strong class="ribbon-content">Add New Patient</strong>
+        	</h1>
+  </div>
+   <form class="form-basic" method="post" action="#">
+   <div class="totalfrom">
+           <div class="form-row">
+            <label>
+                <span>Name</span>
+                <input class="sel" type="text" name="name" placeholder="Patient Name">
+            </label>
+         </div>
+        <div class="form-row">
+              <label>
+                  <span>Gender</span>
+                  <select class="sel" name="dropdown">
+                      <option>--Select--</option>
+                      <option>Male</option>
+                      <option>Famle</option>
+                  </select>
+              </label>
+        </div>
+        <div class="form-row">
+              <label>
+                  <span>Age</span>
+                  <select class="sel" name="dropdown">
+                      <option>--Select--</option>
+                      <option>0-10</option>
+                      <option>11-15</option>
+                      <option>16-20</option>
+                      <option>21-25</option>
+                      <option>26-30</option>
+                      <option>31-35</option>
+                      <option>36-40</option>
+                      <option>41+</option>
+                  </select>
+              </label>
+        </div>
+		 <div class="form-row">
+              <label>
+                  <span>Specialist</span>
+                  <select class="sel" name="dropdown">
+                      <option>--Select--</option>
+                      <option>Hematology</option>
+                      <option>Dermatology</option>
+                      <option>Surgery</option>
+                      <option>Medicine</option>
+                  </select>
+              </label>
+        </div>
+        <div class="form-row">
+              <label>
+                  <span>Check Room</span>
+                  <select class="sel" name="dropdown">
+                      <option>--Select--</option>
+                      <option>301</option>
+                      <option>305</option>
+                      <option>106</option>
+                      <option>19</option>
+                  </select>
+              </label>
+        </div>
+		 <div class="form-row">
+              <label>
+                  <span>Check Bed</span>
+                  <select class="sel" name="dropdown">
+                      <option>--Select--</option>
+                      <option>S-3-8</option>
+                      <option>H-5-6</option>
+                      <option>D-8-7</option>
+                      <option>C-8-7</option>
+                  </select>
+              </label>
+        </div>
+        <div class="form-row">
+            <label>
+                <span>Address</span>
+                <textarea name="textarea"></textarea>
+            </label>
+        </div>
+        <div class="form-row">
+            <label>
+                <span>Mobile</span>
+                <input class="sel" type="text" name="name" placeholder="Mobile no">
+            </label>
+         </div>
+          <div class="form-row">
+              <label>
+                  <span>Date</span>
+                  <input class="sel" type="date" name="date" placeholder="YY-Mon-Date">
+              </label>
+           </div>
+
+        <div class="submit">
+            <button type="submit">Admit</button>
+        </div>
+        <div class="submit">
+            <button type="reset">Reset</button>
+        </div>
+		</div>
+    </form>
+<div class="footerl">
+ <p>Copyright &copy; <script type="text/javascript">var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> Ratin Roy- <a href="#">TUP-Off-BDJobs-29</a> LICT, Dinajpur.</p>
+</div>
+  </body>
+</html>

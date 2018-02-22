@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Appoitment List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/clock.css">    
+    <link rel="stylesheet" href="css/appoitmentlist.css">
+    <link rel="stylesheet" href="css/rabon.css">
+    <link rel="stylesheet" href="css/search.css">
+    <script src="js/clock.js" charset="utf-8"></script>
+</head>
+  <body onload="startTime()">
+    <!--1st header-->
+      <div class="header">
+		<div class="home">
+		<a href="home.html">Home</a>
+		</div>
+          <div class="admin">
+            <marquee behavior="alternate" scrollamount="2s"><h1>Hello Admin!</h1></marquee>
+          </div>
+          <div class="logout">
+            <a href="login.html">Logout</a>
+          </div>
+      </div>
+      <!--1st header end-->
+      <!--Hospital Name start-->
+      <div class="name">
+        <h2>Hospital Management System</h2>
+      </div>
+      <!--Hospital Name End-->
+      <!--Home page menue start-->
+      <div class="menue">
+        <a href="doctor.html">Doctor's</a>
+        <a href="adddoctor.html">Add New Doctor</a>
+        <a href="admitpatient.html">Admit Patient</a>
+        <a href="patient.html">Patient's</a>
+        <a href="appoitment.html">Get Appoitment</a>
+        <a class="active" href="appoitmentlist.html">View Appoitment</a>
+      </div>
+      <!--Home page menue End-->
+      <!--Analog Clock-->
+      <div id="sabuj">
+      <h1>Courrent Time</h1>
+      <div id="a1"></div>
+      </div>
+      <!--Calander-->
+<div class="calander">
+  <h4>Today</h4>
+<script src="js/calander.js"></script>
+</div>
+<!--Patient list-->
+    		
+		<div class="non-semantic-protector">
+        	<h1 class="ribbon">
+        		<strong class="ribbon-content">Appoitment List</strong>
+        	</h1>
+        </div>
+
+   
+   <form class="form-basic" method="post" action="#">
+   <input type="text" name="search" placeholder="Search Appointment..">
+	<div class="appoitmentlist">
+		<table>
+		  <tr>
+			<th id="sl">Appoitment No.</th>
+			<th>Patient Name</th>
+			<th>Doctor Name</th>
+			<th>Date </th>
+			<th>Time</th>
+		  </tr>
+		  <tr>
+			<td class="no" >01</td>
+			<td>Tazimul Islam</a></td>
+			<td>Dr.Protip Roy </td>
+			<td>12 Jan, 2018</td>
+			<td>2PM</td>
+		  </tr>
+		  <tr>
+			<td class="no" >02</td>
+			<td>Rumi Deby</a></td>
+			<td>Dr. Arpita Rany </td>
+			<td>16 Jan, 2017</td>
+			<td>7PM</td>
+		  </tr>
+		  <tr>
+			<td class="no" >03</td>
+			<td>Sree Bkash Roy</a></td>
+			<td>Dr. Ratna Roy </td>
+			<td>15 Jan, 2018</td>
+			<td>6PM</td>
+		  </tr>
+		  <tr>
+			<td class="no" >04</td>
+			<td>Mst. Jorna Khatun</a></td>
+			<td>Dr. Purnima Rany </td>
+			<td>12 Jan, 2017</td>
+			<td>5PM</td>
+		  </tr>
+		  <tr>
+			<td class="no" >05</td>
+			<td>Shumi Khatun</a></td>
+			<td>Dr. Arun Roy</td>
+			<td>14Jan, 2017</td>
+			<td>3PM</td>
+		  </tr>
+		  <tr>
+			<td class="no" >06</td>
+			<td>Md Karim Ali</a></td>
+			<td>Dr. Pranto Roy </td>
+			<td>13Jan, 2017</td>
+			<td>5PM</td>
+		  </tr>
+		</table>
+	</div>
+    </form>
+<div class="footer">
+ <p>Copyright &copy; <script type="text/javascript">var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> Ratin Roy- <a href="#">TUP-Off-BDJobs-29</a> LICT, Dinajpur.</p>
+</div>
+  </body>
+</html>

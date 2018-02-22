@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Add Doctor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/clock.css">    
+    <link rel="stylesheet" href="css/rabon.css">    
+    <link rel="stylesheet" href="css/addoctor.css">    
+	<script src="js/jquery-3.1.0.min.js" charset="utf-8"></script>
+    <script src="js/clock.js" charset="utf-8"></script>
+</head>
+  <body onload="startTime()">
+    <!--1st header-->
+      <div class="header">
+		<div class="home">
+		<a href="home.html">Home</a>
+		</div>
+          <div class="admin">
+            <marquee behavior="alternate" scrollamount="2s"><h1>Hello Admin!</h1></marquee>
+          </div>
+          <div class="logout">
+            <a href="login.html">Logout</a>
+          </div>
+      </div>
+      <!--1st header end-->
+      <!--Hospital Name start-->
+      <div class="name">
+        <h2>Hospital Management System</h2>
+      </div>
+      <!--Hospital Name End-->
+      <!--Home page menue start-->
+      <div class="menue">
+        <a href="doctor.html">Doctor's</a>
+        <a class="active" href="adddoctor.html">Add New Doctor</a>
+        <a href="admitpatient.html">Admit Patient</a>
+        <a href="patient.html">Patient's</a>
+        <a href="appoitment.html">Get Appoitment</a>
+        <a href="appoitmentlist.html">View Appoitment</a>
+      </div>
+      <!--Home page menue End-->
+      <!--Analog Clock-->
+      <div id="sabuj">
+      <h1>Courrent Time</h1>
+      <div id="a1"></div>
+      </div>
+      <!--Calander-->
+<div class="calander">
+  <h4>Today</h4>
+<script src="js/calander.js"></script>
+</div>
+<!-- Add Doctor-->
+<div class="non-semantic-protector">
+        	<h1 class="ribbon">
+        		<strong class="ribbon-content">Add New Doctor</strong>
+        	</h1>
+  </div>
+   <form class="form-basic" method="post" action="#">
+   <div class="totalfrom">
+           <div class="form-row">
+            <label>
+                <span>Name</span>
+                <input class="sel" type="text" name="name" placeholder="Doctor Name">
+            </label>
+         </div>
+        <div class="form-row">
+              <label>
+                  <span>Specialist</span>
+                  <select class="sel" name="dropdown">
+                      <option>--Select--</option>
+                      <option>Hematology</option>
+                      <option>Dermatology</option>
+                      <option>Surgery</option>
+                      <option>Medicine</option>
+                  </select>
+              </label>
+        </div>
+        <div class="form-row">
+            <label>
+                <span>Mobile</span>
+                <input class="sel" type="text" name="name" placeholder="Mobile no">
+            </label>
+         </div>
+          <div class="form-row">
+              <label>
+                  <span>Joining Date</span>
+                  <input class="sel" type="date" name="date" placeholder="YY-Mon-Date">
+              </label>
+            </div>
+
+        <div class="submit">
+            <button type="submit">Add and Get ID</button>
+        </div>
+		</div>
+    </form>
+</div>
+<div class="footer">
+ <p>Copyright &copy; <script type="text/javascript">var creditsyear = new Date();document.write(creditsyear.getFullYear());</script> Ratin Roy- <a href="#">TUP-Off-BDJobs-29</a> LICT, Dinajpur.</p>
+</div>
+  </body>
+</html>
